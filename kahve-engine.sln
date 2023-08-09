@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kahve-engine", "kahve-engine.vcxproj", "{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		External-Clang-BuildAll|x64 = External-Clang-BuildAll|x64
+		External-Clang-BuildAll|x86 = External-Clang-BuildAll|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Debug|x64.ActiveCfg = Debug|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Debug|x64.Build.0 = Debug|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Debug|x86.ActiveCfg = Debug|Win32
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Debug|x86.Build.0 = Debug|Win32
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.External-Clang-BuildAll|x64.ActiveCfg = External-Clang-BuildAll|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.External-Clang-BuildAll|x64.Build.0 = External-Clang-BuildAll|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.External-Clang-BuildAll|x86.ActiveCfg = External-Clang-BuildAll|Win32
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.External-Clang-BuildAll|x86.Build.0 = External-Clang-BuildAll|Win32
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Release|x64.ActiveCfg = Release|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Release|x64.Build.0 = Release|x64
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Release|x86.ActiveCfg = Release|Win32
+		{7ED7265B-06E0-4C7F-B243-FB1D2B96B371}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB7693E3-5A6C-45E7-91A0-880E1D099EAC}
+	EndGlobalSection
+EndGlobal
