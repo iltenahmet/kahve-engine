@@ -1,0 +1,9 @@
+-I../engine/src
+-IC:\VulkanSDK\1.3.250.1/Include
+-DKEXPORT
+-D_DEBUG
+-g 
+-shared 
+-Wvarargs 
+-Wall 
+-Werror

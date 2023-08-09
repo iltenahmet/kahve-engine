@@ -8,25 +8,51 @@
 	"debugger_configurations": 
 	[
 	    {
-	        "name": "(Windows) Launch",
+	        "name": "Kahve-Engine Launch",
 	        "type": "lldb",
 	        "request": "launch",
-	        "program": "${workspaceFolder}/bin/testbed.exe",
+	        "program": "${project_path}/bin/testbed.exe",
 	        "args": [],
 	        "stopAtEntry": false,
-	        "cwd": "${workspaceFolder}/bin/",
+	        "cwd": "${project_path}/bin/",
 	        "environment": [],
 	    },
-	    {
-	        "name": "(Linux) Launch",
-	        "type": "cppdbg",
-	        "request": "launch",
-	        "program": "${workspaceFolder}/bin/testbed",
-	        "args": [],
-	        "stopAtEntry": false,
-	        "cwd": "${workspaceFolder}/bin/",
-	        "environment": []
-	    }
+	],
+	"build_systems":
+	[
+		{
+			"name": "Build Everything",
+			"selector": "source.c, source.cpp",
+			"shell_cmd": "build-all.bat",
+    		"windows": 
+    		{
+        		"shell_cmd": "${project_path}/build-all.bat"
+    		},
+		    "working_dir": "${project_path}",
+		    "variants":
+		    [
+			    {
+					"name": "Build Engine",
+					"selector": "source.c, source.cpp",
+					"shell_cmd": "build.bat",
+		    		"windows": 
+		    		{
+		        		"shell_cmd": "${project_path}/engine/build.bat"
+		    		},
+				    "working_dir": "${project_path}/engine",
+				},
+		    	{
+				    "name": "Build Testbed",
+					"selector": "source.c, source.cpp",
+					"shell_cmd": "build.bat",
+		    		"windows": 
+		    		{
+		        		"shell_cmd": "${project_path}/testbed/build.bat"
+		    		},
+				    "working_dir": "${project_path}/testbed",	
+			 	}	
+		    ]
+		},
 	]
 
 }
